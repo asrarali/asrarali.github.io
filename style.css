@@ -1,0 +1,74 @@
+/* Udaan site: the app's sand, indigo and marigold, with Fraunces headings and Figtree text. */
+:root {
+  --ground: #f4eee2;
+  --surface: #fffdf8;
+  --sunken: #e9e1d1;
+  --line: #e3dacb;
+  --ink: #1b1f2a;
+  --ink2: #4a4f5c;
+  --indigo: #23305e;
+  --indigo-soft: #dce2f2;
+  --marigold: #e3a03a;
+  --brick: #a63d2f;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 17px/1.6 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+a { color: var(--indigo); text-underline-offset: 3px; }
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+header.site { background: var(--indigo); color: #f4eee2; }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+header.site a { color: #f4eee2; text-decoration: none; }
+.brand { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 24px; }
+nav.site { display: flex; gap: 18px; font-size: 15px; flex-wrap: wrap; }
+nav.site a { opacity: 0.85; }
+nav.site a:hover, nav.site a[aria-current='page'] { opacity: 1; text-decoration: underline; }
+
+.hero { background: var(--indigo); color: #f4eee2; padding: 40px 0 56px; position: relative; overflow: hidden; }
+.hero .sun { position: absolute; right: -70px; top: -90px; width: 220px; height: 220px; border-radius: 50%; background: var(--marigold); opacity: 0.9; }
+.hero h1 { font-family: 'Fraunces', Georgia, serif; font-size: 44px; line-height: 1.1; margin: 0 0 8px; position: relative; }
+.hero .scripts { font-size: 22px; opacity: 0.8; margin: 0 0 16px; position: relative; }
+.hero p.lead { font-size: 19px; max-width: 34em; margin: 0; position: relative; color: #c9d0e6; }
+
+main { padding: 32px 0 48px; }
+main h1 { font-family: 'Fraunces', Georgia, serif; font-size: 34px; line-height: 1.2; margin: 0 0 4px; }
+main h2 { font-family: 'Fraunces', Georgia, serif; font-size: 22px; margin: 36px 0 8px; }
+main h3 { font-size: 17px; margin: 20px 0 4px; }
+.meta { color: var(--ink2); font-size: 15px; margin: 0 0 24px; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 16px 0; }
+.card.note { background: var(--indigo-soft); border-color: transparent; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+.grid .card { margin: 0; }
+.grid h3 { margin-top: 0; }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--surface); border-radius: 12px; overflow: hidden; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { background: var(--sunken); font-weight: 700; }
+tr:last-child td { border-bottom: 0; }
+.table-scroll { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 12px; }
+
+ol.steps { padding-left: 22px; }
+ol.steps li { margin: 6px 0; }
+
+footer.site { border-top: 1px solid var(--line); color: var(--ink2); font-size: 14px; padding: 20px 0 32px; }
+footer.site .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .hero h1 { font-size: 36px; }
+  .hero .sun { width: 160px; height: 160px; right: -60px; top: -70px; }
+  main h1 { font-size: 28px; }
+  header.site .wrap { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
