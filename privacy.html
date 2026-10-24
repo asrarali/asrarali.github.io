@@ -17,6 +17,7 @@
       <nav class="site">
         <a href="./">Home</a>
         <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
         <a href="delete-account.html">Delete account</a>
       </nav>
     </div>
@@ -25,13 +26,13 @@
   <main>
     <div class="wrap">
       <h1>Privacy policy</h1>
-      <p class="meta">Last updated 14 October 2026</p>
+      <p class="meta">Last updated 24 October 2026</p>
 
       <div class="card note">
         <p style="margin:0"><strong>In short:</strong> Parwar keeps your birds and records on your phone. What you put
-          online (tournaments, clubs, loft backup, your profile) is stored so the right people can see it. There are no
-          ads, no analytics and no tracking, and we never sell your data. You can delete your account and its data at
-          any time.</p>
+          online (tournaments, clubs, loft sync, your profile) is stored so the right people can see it. Backups go to
+          your own Google Drive, not to us. There are no ads, no analytics and no tracking, and we never sell your data.
+          You can delete your account and its data at any time.</p>
       </div>
 
       <h2>Who we are</h2>
@@ -39,9 +40,10 @@
         iPhone. Questions: <a href="mailto:UdaanKR@gmail.com">UdaanKR@gmail.com</a>.</p>
 
       <h2>What stays on your phone</h2>
-      <p>Your birds, pairs, clutches, care reminders, notes, bird photos and tournaments you have not put online are
-        kept only on your phone. They leave it only if you turn on <strong>Loft backup</strong> or put a tournament
-        online. Care reminders are local notifications made on the phone; no server is involved.</p>
+      <p>Your birds, pairs, clutches, flights, health notes, care reminders, bird photos and tournaments you have not
+        put online are kept only on your phone. They leave it only if you back them up, turn on <strong>loft
+        sync</strong> or put a tournament online. Care reminders are local notifications made on the phone; no server
+        is involved, and Parwar does not use push notifications.</p>
 
       <h2>What is stored online, and who sees it</h2>
       <p>Online features use <a href="https://supabase.com">Supabase</a>, a cloud database and file store that we
@@ -57,7 +59,8 @@
             <tr>
               <td>Your name, loft name and profile photo</td>
               <td>When you join or create a club, or sign in</td>
-              <td>Members of your clubs. The photo is stored at a link that is hard to guess but not secret.</td>
+              <td>Members of your clubs, and people asking to join a club where you are an Ustad or Khalifa. The photo
+                is stored at a link that is hard to guess but not secret.</td>
             </tr>
             <tr>
               <td>Your WhatsApp number (optional)</td>
@@ -78,26 +81,45 @@
             <tr>
               <td>Landing location</td>
               <td>When a referee taps <em>Landed</em>, if location is allowed</td>
-              <td>Everyone in that tournament, so the timing can be trusted</td>
+              <td>Everyone who joins that tournament with its code, so the timing can be trusted</td>
             </tr>
             <tr>
-              <td>Landing photos, photos of birds and the video (with sound) of the kit before release</td>
+              <td>Landing photos and photos of the birds before release</td>
               <td>When a referee takes them in a live tournament</td>
-              <td>Everyone in that tournament</td>
+              <td>Everyone who joins that tournament with its code</td>
             </tr>
             <tr>
-              <td>Club details, board posts, replies, photos, event replies, reports, ranks and their history</td>
+              <td>The video (with sound) of the kit before release</td>
+              <td>When a referee records it in a live tournament</td>
+              <td>Only the organiser who created the tournament</td>
+            </tr>
+            <tr>
+              <td>Club details, board posts, replies, photos, event replies, reports, join requests, ranks, ustads and
+                their history</td>
               <td>When you use clubs</td>
-              <td>Members of that club. Reports are seen by the Head and Deputies.</td>
+              <td>Members of that club. Reports are seen by the Head. A join request is seen by the Head, the Deputies
+                and the ustad you choose.</td>
             </tr>
             <tr>
-              <td>Loft backup: your loft book, bird photos, and each linked phone's name and model</td>
-              <td>When you turn on Loft backup</td>
+              <td>Loft sync: your loft book, bird photos, and each linked phone's name and model</td>
+              <td>When you turn on <em>Use the same loft on two phones</em></td>
               <td>Only the phones you link with your loft code</td>
+            </tr>
+            <tr>
+              <td>Organiser plan: whether you have it, until when, which store you bought it from</td>
+              <td>When you buy or restore the plan</td>
+              <td>Only you. Our server uses it to check tournament limits.</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <h2>Backups</h2>
+      <p><strong>Google Drive backup</strong> saves your loft book, settings, tournaments and photos (and videos, if you
+        choose) to a hidden app folder in <em>your own</em> Google Drive. Parwar asks Google only for access to that
+        folder, not to the rest of your Drive. The backup is not sent to our server, and we cannot read it. The
+        <strong>backup file</strong> option makes a file on your phone that you can save or share wherever you choose.
+      </p>
 
       <h2>Signing in with Google or Apple</h2>
       <p>Signing in is optional. It lets you get your account back on a new phone. Google or Apple tells us your name,
@@ -105,13 +127,20 @@
         email if you choose to hide it. We use these only to sign you in and to fill in your profile; you can change
         your name and photo in Settings. We do not get your Google or Apple password.</p>
 
+      <h2>The Organiser plan (purchases)</h2>
+      <p>The Organiser plan is an optional monthly subscription bought through <strong>Google Play</strong> or the
+        <strong>App Store</strong>. They handle the payment; Parwar never sees your card or payment details. We use
+        <a href="https://www.revenuecat.com">RevenueCat</a> to check purchases with the store. RevenueCat knows your
+        Parwar account number (a random id, not your name or email), what you bought, when it renews or ends, and your
+        phone's app and system version. See <a href="terms.html">Terms</a> for how the plan works.</p>
+
       <h2>Phone permissions</h2>
       <ul>
         <li><strong>Camera and photos:</strong> to photograph your birds, take your profile photo, and take proof
           photos in tournaments.</li>
         <li><strong>Microphone:</strong> only for the sound of the video recorded before release.</li>
         <li><strong>Location:</strong> only while the app is open and a referee marks a landing. Parwar never tracks
-          your location in the background.</li>
+          your location in the background. Weather and sunrise times use the city you choose, not your location.</li>
         <li><strong>Notifications:</strong> for your own care reminders and clutch dates.</li>
       </ul>
       <p>You can refuse any of these; the rest of the app keeps working.</p>
@@ -126,24 +155,43 @@
       <h2>Services that run the app</h2>
       <ul>
         <li><strong>Supabase</strong> stores the online data described above.</li>
-        <li><strong>Google</strong> and <strong>Apple</strong> handle sign-in if you choose it.</li>
-        <li><strong>Expo</strong> delivers app updates. Like any download, this shares your phone's internet address
-          and app version with Expo.</li>
+        <li><strong>Google</strong> and <strong>Apple</strong> handle sign-in if you choose it, and the purchase if you
+          buy the Organiser plan. <strong>Google Drive</strong> holds your backup if you turn it on.</li>
+        <li><strong>RevenueCat</strong> checks Organiser plan purchases with the store.</li>
+        <li><strong>Open-Meteo</strong> provides the weather. The app sends it only the position of the city you chose
+          from the list.</li>
+        <li><strong>Expo</strong> delivers app updates.</li>
       </ul>
-      <p>These servers may be outside your country. Data is sent to them over encrypted connections, and the database
+      <p>Like any internet service, these see your phone's internet address, and some see the app and system version.
+        Their servers may be outside your country. Data is sent to them over encrypted connections, and our database
         only lets each person read what the rules above allow.</p>
 
       <h2>How long we keep it</h2>
-      <p>Online data is kept until you delete it (for example a post or a tournament you organise) or delete your
-        account. Things you shared with others, such as club posts, may stay in the club without your name after your
-        account is deleted, so conversations still make sense.</p>
+      <ul>
+        <li><strong>Tournament photos and videos</strong> are deleted from our server 30 days after the tournament's
+          last day. Phones that downloaded them keep their copies.</li>
+        <li><strong>Club board photos</strong> are deleted from our server 180 days after they are posted, or when the
+          post is deleted.</li>
+        <li><strong>Results</strong> (release and landing times, locations and positions) are kept until the
+          tournament is deleted or its organiser deletes their account, so results stay checkable. Board post text is
+          kept until the post's club is deleted.</li>
+        <li>A <strong>deleted board post</strong> is hidden from the club. Its text stays stored, readable only by its
+          author and the club's Head and Deputies, until the club is deleted.</li>
+        <li>Answered <strong>join requests</strong> are deleted after 90 days.</li>
+        <li>Everything else is kept until you delete it or delete your account.</li>
+      </ul>
+      <p>Things you shared with others, such as club posts and results you timed as a referee, may stay after your
+        account is deleted, without your account attached, so conversations and results still make sense.</p>
 
       <h2>Deleting your data</h2>
-      <p>In the app: <strong>Settings → Account → Delete my account</strong>. This deletes your account, profile and
-        photo, the tournaments you organise and your club memberships, and erases the app's data on your phone. See
-        <a href="delete-account.html">Delete your account</a> for details, or to ask us to delete it for you.</p>
+      <p>If you signed in with Google or Apple: <strong>Settings → Account → Delete my account</strong>. This deletes
+        your account, profile and photo, the tournaments you organise, your club memberships and your Organiser plan
+        record, and erases the app's data on your phone. Deleting your account does <strong>not</strong> cancel a
+        subscription: cancel it in Google Play or the App Store. If you never signed in, or no longer have the app,
+        email us. See <a href="delete-account.html">Delete your account</a> for details.</p>
       <p>To erase only what is on your phone, use <strong>Settings → Erase all data on this phone</strong>, or
-        uninstall the app.</p>
+        uninstall the app. To delete a Google Drive backup, remove Parwar's data in Google Drive (Settings → Manage
+        apps).</p>
 
       <h2>Children</h2>
       <p>Parwar is not meant for children under 13, and we do not knowingly collect their data. If you think a child
@@ -161,7 +209,7 @@
   <footer class="site">
     <div class="wrap">
       <span>© 2026 Parwar</span>
-      <span><a href="./">Home</a> · <a href="delete-account.html">Delete account</a></span>
+      <span><a href="./">Home</a> · <a href="terms.html">Terms</a> · <a href="delete-account.html">Delete account</a></span>
     </div>
   </footer>
 </body>
